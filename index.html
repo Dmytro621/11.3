@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cats = [
+        "1.avif",
+        "2.jpg",
+        "3.webp",
+        "4.avif",
+        "5.jpg",
+        "6.jpg",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+      ];
+
+      let randomIndex = Math.floor(Math.random() * 9);
+
+      let randomImage = cats[randomIndex];
+
+      let imgElement = document.createElement("img");
+      imgElement.src = randomImage;
+
+      document.body.appendChild(imgElement);
+    </script>
+  </body>
+</html>
